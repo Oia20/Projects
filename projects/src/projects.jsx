@@ -1,14 +1,12 @@
-// ProjectList.js
-
 import React, { useState } from 'react';
-import './projects.css' // Import your CSS file for styling
+import './projects.css'; // Import your CSS file for styling
 
 const projects = [
   {
     id: 1,
-    name: "Project 1",
-    image: "https://via.placeholder.com/300x200", // Example image URL
-    technologies: ["React", "JavaScript", "HTML", "CSS"],
+    name: "OCR Automation Discord Bot",
+    image: "https://via.placeholder.com/300x200",
+    technologies: ["Python", "GCP", "PyTesseractOCR", "CSS", "OpenCV"],
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur quam sit amet lacus consequat, in finibus dui ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur quam sit amet lacus consequat, in finibus dui ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur quam sit amet lacus consequat, in finibus dui ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur quam sit amet lacus consequat, in finibus dui ultricies.",
     githubLink: "https://github.com/example/project1",
     liveDemoLink: "https://example.com/project1-demo"
@@ -16,22 +14,21 @@ const projects = [
   {
     id: 2,
     name: "Project 2",
-    image: "https://via.placeholder.com/300x200", // Example image URL
+    image: "https://via.placeholder.com/300x200",
     technologies: ["Node.js", "Express", "MongoDB"],
     description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-    githubLink: null, // No GitHub link for this project
+    githubLink: null,
     liveDemoLink: "https://example.com/project2-demo"
   },
   {
     id: 3,
     name: "Project 3",
-    image: "https://via.placeholder.com/300x200", // Example image URL
+    image: "https://via.placeholder.com/300x200",
     technologies: ["Python", "Django", "PostgreSQL"],
     description: "Sed pulvinar ipsum ut lacus tempor, quis porttitor quam hendrerit.",
     githubLink: "https://github.com/example/project3",
-    liveDemoLink: null // No live demo link for this project
-  },
-  // Add more projects as needed
+    liveDemoLink: null
+  }
 ];
 
 const ProjectCard = ({ project, expanded, onClick }) => {
@@ -39,17 +36,20 @@ const ProjectCard = ({ project, expanded, onClick }) => {
     <div className="project-card" onClick={() => onClick(project.id)}>
       <img src={project.image} alt={project.name} className="project-image" />
       <h3>{project.name}</h3>
-      <ul className="technologies">
+
+      <div className="technologies">
         {project.technologies.map((tech, index) => (
-          <li key={index}>{tech}</li>
+          <span key={index} id={tech} className="technology">{tech}</span>
         ))}
-      </ul>
+      </div>
+
+      <div className="links">
+        {project.githubLink && <a href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>}
+        {project.liveDemoLink && <a href={project.liveDemoLink} target="_blank" rel="noopener noreferrer">Live Demo</a>}
+      </div>
+
       <div className={`description ${expanded ? 'expanded' : ''}`}>
         <p>{project.description}</p>
-        <div className="links">
-          {project.githubLink && <a href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>}
-          {project.liveDemoLink && <a href={project.liveDemoLink} target="_blank" rel="noopener noreferrer">Live Demo</a>}
-        </div>
       </div>
     </div>
   );
@@ -63,15 +63,18 @@ const ProjectList = () => {
   };
 
   return (
-    <div className="project-list">
-      {projects.map((project) => (
-        <ProjectCard
-          key={project.id}
-          project={project}
-          expanded={project.id === expandedProjectId}
-          onClick={handleExpand}
-        />
-      ))}
+    <div>
+      <h1 className="header">Jacob Dement's projects</h1>
+      <div className="project-list">
+        {projects.map((project) => (
+          <ProjectCard
+            key={project.id}
+            project={project}
+            expanded={project.id === expandedProjectId}
+            onClick={handleExpand}
+          />
+        ))}
+      </div>
     </div>
   );
 };
