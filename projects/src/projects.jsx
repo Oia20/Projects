@@ -5,7 +5,7 @@ const projects = [
   {
     id: 1,
     name: "OCR Automation Discord Bot",
-    image: "https://via.placeholder.com/300x200",
+    image: "Add a heading (10).png",
     technologies: ["Python", "GCP", "PyTesseractOCR", "CSS", "OpenCV"],
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur quam sit amet lacus consequat, in finibus dui ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur quam sit amet lacus consequat, in finibus dui ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur quam sit amet lacus consequat, in finibus dui ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur quam sit amet lacus consequat, in finibus dui ultricies.",
     githubLink: "https://github.com/example/project1",
@@ -13,9 +13,9 @@ const projects = [
   },
   {
     id: 2,
-    name: "Project 2",
-    image: "https://via.placeholder.com/300x200",
-    technologies: ["Node.js", "Express", "MongoDB"],
+    name: "3D Portfolio",
+    image: "portfolio.png",
+    technologies: ["React Three Fiber", "Three.js", "MongoDB"],
     description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
     githubLink: null,
     liveDemoLink: "https://example.com/project2-demo"
