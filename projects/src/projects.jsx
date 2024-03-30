@@ -5,8 +5,9 @@ const projects = [
   {
     id: 1,
     name: "OCR Automation Discord Bot",
+    desc: "Text extraction, data extry software, saving 10 precious human hours per week.",
     image: "Add a heading (10).png",
-    technologies: ["Python", "GCP", "PyTesseractOCR", "CSS", "OpenCV", "JavaScript"],
+    technologies: ["Python", "GCP", "PyTesseractOCR", "OpenCV"],
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur quam sit amet lacus consequat, in finibus dui ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur quam sit amet lacus consequat, in finibus dui ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur quam sit amet lacus consequat, in finibus dui ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur quam sit amet lacus consequat, in finibus dui ultricies.",
     githubLink: "https://github.com/example/project1",
     liveDemoLink: "https://example.com/project1-demo"
@@ -14,6 +15,7 @@ const projects = [
   {
     id: 2,
     name: "3D Portfolio",
+    desc: "Text extraction, data extry software, saving 10 hours of precious human hours per week.",
     image: "portfolio.png",
     technologies: ["React Three Fiber", "Three.js", "JavaScript", "Blender", "React"],
     description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
@@ -23,6 +25,7 @@ const projects = [
   {
     id: 3,
     name: "Project 3",
+    desc: "Text extraction, data extry software, saving 10 hours of precious human hours per week.",
     image: "https://via.placeholder.com/300x200",
     technologies: ["Python", "Django", "PostgreSQL"],
     description: "Sed pulvinar ipsum ut lacus tempor, quis porttitor quam hendrerit.",
@@ -32,6 +35,7 @@ const projects = [
   {
     id: 4,
     name: "Project 3",
+    desc: "Text extraction, data extry software, saving 10 hours of precious human hours per week.",
     image: "https://via.placeholder.com/300x200",
     technologies: ["Python", "Django", "PostgreSQL"],
     description: "Sed pulvinar ipsum ut lacus tempor, quis porttitor quam hendrerit.",
@@ -39,12 +43,13 @@ const projects = [
     liveDemoLink: null
   }
 ];
-
+// Add quick description, before technoligies
 const ProjectCard = ({ project, expanded, onClick }) => {
   return (
     <div className="project-card" onClick={() => onClick(project.id)}>
       <img src={project.image} alt={project.name} className="project-image" />
       <h3>{project.name}</h3>
+      <p>{project.desc}</p>
 
       <div className="technologies">
         {project.technologies.map((tech, index) => (

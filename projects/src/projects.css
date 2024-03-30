@@ -100,7 +100,15 @@
 .links a:hover {
   text-decoration: underline;
 }
+@keyframes example {
+  from {height: 0;}
+  to {height: 100%;}
+}
 
+@keyframes example2 {
+  from {height: 100%;}
+  to {height: 0;}
+}
 .description {
   position: absolute;
   bottom: 0;
@@ -109,18 +117,34 @@
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
   overflow: auto;
-  visibility: hidden;
   height: 0;
   font-size: 20px;
   max-height: 300px;
-  transition: max-height 0.3s ease;
+  visibility: hidden;
 }
 
 .description.expanded {
-  height: auto;
+  height: 100%;
   visibility: visible;
+  animation-name: example;
+  animation-duration: 2s;
+}
+.description::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
 }
 
+.description::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1); /* Set the background color of the track */
+}
+
+.description::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5); /* Set the color of the scrollbar thumb */
+  border-radius: 5px; /* Round the corners of the thumb */
+}
+
+.description::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.7); /* Set the color of the scrollbar thumb on hover */
+}
 
 .description p {
   color: #fff;
@@ -169,5 +193,9 @@ html {
 
 
 .project-card h3 {
+  padding-left: 21px;
+}
+
+.project-card p{
   padding-left: 21px;
 }
