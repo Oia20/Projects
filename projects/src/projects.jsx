@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     name: "OCR Automation Discord Bot",
     image: "Add a heading (10).png",
-    technologies: ["Python", "GCP", "PyTesseractOCR", "CSS", "OpenCV"],
+    technologies: ["Python", "GCP", "PyTesseractOCR", "CSS", "OpenCV", "JavaScript"],
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur quam sit amet lacus consequat, in finibus dui ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur quam sit amet lacus consequat, in finibus dui ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur quam sit amet lacus consequat, in finibus dui ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur quam sit amet lacus consequat, in finibus dui ultricies.",
     githubLink: "https://github.com/example/project1",
     liveDemoLink: "https://example.com/project1-demo"
@@ -15,13 +15,22 @@ const projects = [
     id: 2,
     name: "3D Portfolio",
     image: "portfolio.png",
-    technologies: ["React Three Fiber", "Three.js", "MongoDB"],
+    technologies: ["React Three Fiber", "Three.js", "JavaScript", "Blender", "React"],
     description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
     githubLink: null,
     liveDemoLink: "https://example.com/project2-demo"
   },
   {
     id: 3,
+    name: "Project 3",
+    image: "https://via.placeholder.com/300x200",
+    technologies: ["Python", "Django", "PostgreSQL"],
+    description: "Sed pulvinar ipsum ut lacus tempor, quis porttitor quam hendrerit.",
+    githubLink: "https://github.com/example/project3",
+    liveDemoLink: null
+  },
+  {
+    id: 4,
     name: "Project 3",
     image: "https://via.placeholder.com/300x200",
     technologies: ["Python", "Django", "PostgreSQL"],

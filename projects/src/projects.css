@@ -5,7 +5,7 @@
   }
   .header {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 20px;
     color: #fff; /* Changing text color to white */
     background: linear-gradient(45deg, #b92929, #fa9a6d, #f5ff9e, #72fa6d, #2980b9); /* Defining gradient colors */
@@ -66,6 +66,7 @@
   flex-wrap: wrap;
   padding: 20px;
   padding-top: 10px;
+  margin-bottom: 30px;
 }
 
 .technology {
@@ -82,10 +83,12 @@
 }
 
 .links {
-  justify-content: space-between;
-  align-self: bottom;
-  padding: 10px 0;
-  bottom:0;
+  /* margin-top:10px; */
+  bottom: 0;
+  height: 16px;
+  position: absolute;
+  padding: 5px;
+  margin: 5px;
 }
 
 .links a {
@@ -138,6 +141,10 @@
 
 #CSS {
   background-color: #3894d1;
+}
+
+#JavaScript {
+  background-color:  #F0DB4F;
 }
 
 html {
