@@ -1,23 +1,49 @@
 /* projects.css */
-  @font-face {
+html {
+  font-family: "barlow"'Times New Roman', Times, serif;
+  height: 100vh;
+  background: linear-gradient(135deg, #3490dc, #6574cd);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+ 
+
+
+@font-face {
     font-family: barlow;
     src: url("Barlow-Light.ttf");
   }
-  .header {
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #fff; /* Changing text color to white */
-    background: linear-gradient(45deg, #b92929, #fa9a6d, #f5ff9e, #72fa6d, #2980b9); /* Defining gradient colors */
-    background-size: 400% 400%; /* Setting size of background */
-    animation: gradientAnimation 8s ease infinite; /* Setting animation */
-    -webkit-background-clip: text; /* Making text visible only where it overlaps the background */
-    background-clip: text; /* Making text visible only where it overlaps the background */
-    -webkit-text-fill-color: transparent; /* Hiding original text color */
-    padding: 2px;
-    margin: 15px;
-  }
-
+    .headerbg {
+      backdrop-filter: blur(5px); /* Adds a blur effect */
+      padding: 20px; /* Adjust padding as needed */
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      border-radius: 5px;
+    }
+    
+    .header {
+      margin: 10px;
+      font-size: 36px;
+      text-align: center;
+      color: #381f1f; /* Text color */
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-family: Barlow, Arial, sans-serif; /* Choose your font */
+      animation: shimmer 2s infinite alternate; /* Add shimmer animation */
+    }
+    
+    @keyframes shimmer {
+      0% {
+        color: #05030a;
+        text-shadow: 0 0 10px #6574cd, 0 0 20px #6574cd, 0 0 30px #6574cd, 0 0 40px #6574cd, 0 0 50px #6574cd, 0 0 60px #6574cd, 0 0 70px #6574cd;
+      }
+      100% {
+        color: #172936; /* Adjust shimmer color */
+        text-shadow: 0 0 10px #3490dc, 0 0 20px #3490dc, 0 0 30px #3490dc 0 0 40px #3490dc, 0 0 50px #3490dc, 0 0 60px #3490dc, 0 0 70px #3490dc;
+      }
+    }
   @keyframes gradientAnimation {
     0% {
       background-position: 0% 50%; /* Initial position */
@@ -39,7 +65,7 @@
   background-color: #f9f9f9;
   margin: 10px;
   border-radius: 3px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
+  box-shadow: 5px 5px 9px rgb(0, 0, 0);
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -47,6 +73,7 @@
 }
 .project-card:hover {
   box-shadow: 5px 5px 9px rgb(0, 0, 0);
+  transform: scale(1.02);
 }
 
 .project-card:hover .project-image {
@@ -171,13 +198,6 @@
   background-color:  #F0DB4F;
 }
 
-html {
-  font-family: "barlow"'Times New Roman', Times, serif;
-  height: 100%;
-  background: linear-gradient(135deg, #00041d, #0b2542);
-  background-size: 400% 400%;
-  animation: gradientAnimation 10s ease infinite;
-}
 
 @keyframes gradientAnimation {
   0% {
@@ -198,4 +218,50 @@ html {
 
 .project-card p{
   padding-left: 21px;
+}
+
+
+footer {
+  background-color: #172936; /* Adjust color as needed */
+  color: #ffffff; /* Text color */
+  margin-top: 0; /* take available whitespace */
+  margin-bottom: -10px;      /* remove bottom whitespace */
+  padding-bottom: 5px;
+  height: 100px;     
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Adjust width as needed */
+  margin: 0 auto;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+}
+
+.footer-left p,
+.footer-right p {
+  margin: 0;
+}
+
+.footer-left p {
+  text-align: left;
+  padding: 15px
+}
+
+.footer-right p {
+  text-align: right;
+  padding: 15px
+
+}
+
+.footer-right a {
+  text-align: right;
+  padding: 15px;
+  color: #3490dc;
+
 }
