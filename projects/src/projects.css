@@ -65,7 +65,7 @@ html {
 .project-card {
   background-color: #f9f9f9;
   margin: 10px;
-  border-radius: 3px;
+  border-radius: 15px;
   box-shadow: 5px 5px 9px rgb(0, 0, 0);
   cursor: pointer;
   position: relative;

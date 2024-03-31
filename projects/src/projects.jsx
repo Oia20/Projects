@@ -17,8 +17,8 @@ const projects = [
     name: "3D Portfolio",
     desc: "My personal portfolio made with React Three Fiber.",
     image: "portfolio.png",
-    technologies: ["React Three Fiber", "Three.js", "JavaScript", "Blender", "React"],
-    description: "My goal with this portfolio is to evoke a childlike exploration by pulling you into an interactive 3D world. The landing page is a low-poly underwater scene, and the about page is a 3D room with interactive objects you can click on to learn about me. I used blender to customize and add my own touches to these models found on sketchfab. The logic for the site is written in JavaScript/React/JSX, while the rendering and 3D screen creations are done with React Three Fiber/Three.js",
+    technologies: ["React Three Fiber", "Three.js", "JavaScript", "Blender", "React", "Vite"],
+    description: "My goal with this portfolio is to evoke a childlike exploration by pulling you into an interactive 3D world. The landing page is a low-poly underwater scene, and the about page is a 3D room with interactive objects you can click on to learn about me. I used blender to customize and add my own touches to these models found on sketchfab. The logic for the site is written in JavaScript/React/JSX, while the rendering and 3D screen creations are done with React Three Fiber/Three.js. This projects page is pure React with Vite as it's build tool.",
     githubLink: "https://github.com/Oia20/personalPortfolio",
     liveDemoLink: "https://oia20.github.io/personalPortfolio/"
   },
