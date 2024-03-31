@@ -5,20 +5,20 @@ const projects = [
   {
     id: 1,
     name: "OCR Automation Discord Bot",
-    desc: "Text extraction and automated data entry software, saving 10 precious human hours per week.",
+    desc: "Text extraction and automated data entry software, saving 10 precious human hours per week. User base of 50+ people daily.",
     image: "eye.png",
     technologies: ["Python", "GCP", "PyTesseractOCR", "OpenCV"],
-    description: "Members of an online gaming community I'm a part of were having to do 10+ hrs of manual data entry per week... Which is not what a game is meant for! Games are meant to bring joy, not to make you work. So I along with my partner made this bot which accepts a screenshot from the user, then using open computer vision and Googles TesseractOCR the bot extracts the text from the image. Next the bot automatically updates a spreadsheet using gSpread (A google spreadsheet API) giving each player in the screenshot the appropriate amount of game credits to be spent on in game gear. Lastly the bot returns a message describing which players were at the boss, and how many credits they received.",
+    description: "Members of an online gaming community I'm a part of were having to do 10+ hrs of manual data entry per week... Which is not what a game is meant for! Games are meant to bring joy, not to make you work. So I along with my partner made this bot which accepts a screenshot from the user, then using open computer vision and Googles TesseractOCR the bot extracts the text from the image. Next the bot automatically updates a spreadsheet using gSpread (A google spreadsheet API) giving each player in the screenshot the appropriate amount of game credits to be spent on in game gear. Lastly the bot returns a message describing which players were at the boss, and how many credits they received. This software is currently being utilized by 50+ people daily.",
     githubLink: "https://github.com/example/project1",
     liveDemoLink: "https://example.com/project1-demo"
   },
   {
     id: 2,
     name: "3D Portfolio",
-    desc: "Text extraction, data extry.",
+    desc: "My personal portfolio made with React Three Fiber.",
     image: "portfolio.png",
     technologies: ["React Three Fiber", "Three.js", "JavaScript", "Blender", "React"],
-    description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    description: "My goal with this portfolio is to evoke a childlike exploration by pulling you into an interactive 3D world. The landing page is a low-poly underwater scene, and the about page is a 3D room with interactive objects you can click on to learn about me. I used blender to customize and add my own touches to these models found on sketchfab. The logic for the site is written in JavaScript/React/JSX, while the rendering and 3D screen creations are done with React Three Fiber/Three.js",
     githubLink: "https://github.com/Oia20/personalPortfolio",
     liveDemoLink: "https://oia20.github.io/personalPortfolio/"
   },
@@ -35,6 +35,16 @@ const projects = [
   {
     id: 4,
     name: "Project 3",
+    desc: "Text extraction, data extry software, saving 10 hours of precious human hours per week.",
+    image: "https://via.placeholder.com/300x200",
+    technologies: ["Python", "Django", "PostgreSQL"],
+    description: "Sed pulvinar ipsum ut lacus tempor, quis porttitor quam hendrerit.",
+    githubLink: "https://github.com/example/project3",
+    liveDemoLink: null
+  },
+  {
+    id: 5,
+    name: "Project 5",
     desc: "Text extraction, data extry software, saving 10 hours of precious human hours per week.",
     image: "https://via.placeholder.com/300x200",
     technologies: ["Python", "Django", "PostgreSQL"],
@@ -77,7 +87,8 @@ const ProjectList = () => {
   };
 
   return (
-    <div>
+    <body>
+    <div className='parent'>
       <div className='headerbg'>
       <h1 className="header">Jacob Dement's projects</h1>
       </div>
@@ -91,17 +102,18 @@ const ProjectList = () => {
           />
         ))}
       </div>
-      <footer>
-        <div class="footer-container">
-          <div class="footer-left">
+      <footer className='footer'>
+        <div className="footer-container">
+          <div className="footer-left">
             <p>&copy; 2024 Jacob Dement. All rights reserved.</p>
           </div>
-          <div class="footer-right">
+          <div className="footer-right">
             <p><a href='https://oia20.github.io/simpleContact/'>Contact Page</a></p>
           </div>
         </div>
       </footer>
     </div>
+    </body>
     
   );
 };

@@ -1,14 +1,16 @@
 /* projects.css */
+#root {
+  min-height: 100vh;
+}
+
 html {
   font-family: "barlow"'Times New Roman', Times, serif;
   height: 100vh;
   background: linear-gradient(135deg, #3490dc, #6574cd);
-  background-size: 400% 400%;
+  background-size: 10000%;
   animation: gradientAnimation 10s ease infinite;
 }
  
-
-
 @font-face {
     font-family: barlow;
     src: url("Barlow-Light.ttf");
@@ -24,7 +26,6 @@ html {
     }
     
     .header {
-      margin: 10px;
       font-size: 36px;
       text-align: center;
       color: #381f1f; /* Text color */
@@ -224,12 +225,12 @@ html {
 footer {
   background-color: #172936; /* Adjust color as needed */
   color: #ffffff; /* Text color */
-  margin-top: 0; /* take available whitespace */
   margin-bottom: -10px;      /* remove bottom whitespace */
   padding-bottom: 5px;
-  height: 100px;     
+  margin-left: -17px;
+  margin-right: -16px;
+  margin-top: 20px;
 }
-
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -261,7 +262,7 @@ footer {
 
 .footer-right a {
   text-align: right;
-  padding: 15px;
+  padding: 5px;
   color: #3490dc;
 
 }
