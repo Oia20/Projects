@@ -54,8 +54,8 @@ const projects = [
   }, {
     id: 6,
     name: "Asynchronous Timer Discord Bot",
-    desc: "Learning focused website which gives you a random article in a selected category and three Youtube videos on the topic.",
-    image: "learn.png",
+    desc: "Asynchronous timer which allows a gaming community to stay on the same page about NPC respawn times. Utilized by 25+ people daily.",
+    image: "timer.png",
     technologies: ["Python", "GCP"],
     description: "I built this website for myself, to solve a problem of wanting to learn about a random topic, but not knowing how to find a truly random way to learn about information in a specific genre. This website uses the WikiAPI along with the YoutubeAPI to generate a random article in a specific category and 3 youtube videos on the same topic. I've come a long way in terms of design skills since this project, but it still serves as a wonderful resource for the times whenever I just want to learn!",
     githubLink: "https://github.com/example/project3",
