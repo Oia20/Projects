@@ -57,7 +57,7 @@ const projects = [
     desc: "Asynchronous timer which allows a gaming community to stay on the same page about NPC respawn times. Utilized by 25+ people daily.",
     image: "timer.png",
     technologies: ["Python", "GCP"],
-    description: "I built this website for myself, to solve a problem of wanting to learn about a random topic, but not knowing how to find a truly random way to learn about information in a specific genre. This website uses the WikiAPI along with the YoutubeAPI to generate a random article in a specific category and 3 youtube videos on the same topic. I've come a long way in terms of design skills since this project, but it still serves as a wonderful resource for the times whenever I just want to learn!",
+    description: "This bot allows a community of people to stay on the same page about npc respawn times, allowing for better time management and team coordination. It asynchronously times things, for example, one person says `blank boss down` and the bot returns a message notifying that it was timed, after the set time passes the bot sends a message 8 minutes before to remind you, then if the boss is missed (Another group gets it) the bot then predicts the earliest possible time he could respawn. The bot has great humor too! This helps break up monotony in the users experience.",
     githubLink: "https://github.com/example/project3",
     liveDemoLink: "https://oia20.github.io/What-to-learn-/"
   },
