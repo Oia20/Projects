@@ -10,7 +10,8 @@ const projects = [
     technologies: ["Python", "GCP", "PyTesseractOCR", "OpenCV"],
     description: "Members of an online gaming community I'm a part of were having to do 10+ hrs of manual data entry per week... Which is not what a game is meant for! Games are meant to bring joy, not to make you work. So I along with my partner made this bot which accepts a screenshot from the user, then using open computer vision and Googles TesseractOCR the bot extracts the text from the image. Next the bot automatically updates a spreadsheet using gSpread (A google spreadsheet API) giving each player in the screenshot the appropriate amount of game credits to be spent on in game gear. Lastly the bot returns a message describing which players were at the boss, and how many credits they received. This software is currently being utilized by 50+ people daily and is hosted on Google Cloud.",
     githubLink: null,
-    liveDemoLink: null
+    liveDemoLink: null, 
+    yt: "https://www.youtube.com/watch?v=8DBiJJX9OX0&ab_channel=JacobDementDemos"
   },
   {
     id: 2,
@@ -78,7 +79,9 @@ const ProjectCard = ({ project, expanded, onClick }) => {
 
       <div className="links">
         {project.githubLink && <a href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>}
-        {project.liveDemoLink && <a href={project.liveDemoLink} target="_blank" rel="noopener noreferrer">Live Demo</a>}
+        {project.liveDemoLink && <a href={project.liveDemoLink} target="_blank" rel="noopener noreferrer">Live Site</a>}
+        {project.yt && <a href={project.yt} target="_blank" rel="noopener noreferrer">Youtube Video Demo</a>}
+
       </div>
 
       <div className={`description ${expanded ? 'expanded' : ''}`}>
