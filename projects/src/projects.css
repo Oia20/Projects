@@ -123,6 +123,7 @@ html {
   text-decoration: none;
   color: #333333;
   margin: 5px;
+  margin-left: 15px;
 }
 
 .links a:hover {
