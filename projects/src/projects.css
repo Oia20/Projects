@@ -199,7 +199,38 @@ html {
   background-color:  #F0DB4F;
 }
 
+#Vite {
+  background-color: #b646eb;
+}
+#HTML {
+  background-color: #f06529;
+}
+#JSX {
+  background-color: #252525;
+  color: whitesmoke;
+}
+#React {
+  background-color: #43a0df;
+}
 
+#PyTesseractOCR {
+  background-color:darkolivegreen;
+}
+
+#Blender {
+  background-color:goldenrod;
+}
+
+#ReactThreeFiber {
+  background-color: #050404;
+  color: whitesmoke;
+}
+
+#ThreeJS {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border:#05030a solid 1px
+}
 @keyframes gradientAnimation {
   0% {
       background-position: 0% 50%;
