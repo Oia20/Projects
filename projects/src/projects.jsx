@@ -4,6 +4,17 @@ import './projects.css'; // Import your CSS file for styling
 const projects = [
   {
     id: 1,
+    name: "MuseDrops, Fullstack Thought Sharing Platform",
+    desc: "Website where you share your muses or 'Shower thoughts' with others.",
+    image: "eye.png",
+    technologies: ["JavaScript", "React", "Vite", "Node", "Express", "MySQL", "TailwindCSS", "Redux", "JSX", "CSS"],
+    description: "I love the idea of shower thoughts and how they can be so silly, yet make you stop to think, so I made a website for people to share them! Unfortunately I can't keep the backend of the site live at the moment, so new posts and User Auth are currently unavailable. The Authentication encryption is done with the bcrpyt nodejs library to hash passwords. The database for this project uses MySQL, and the server is created using express/Node.js. The client side uses react, tailwindcss, redux for login state management, and vite for build tools.",
+    githubLink: "https://github.com/Oia20/MuseDrops",
+    liveDemoLink: null, 
+    yt: "https://youtu.be/T3d1-iLRyFY?si=agofhsfEN72DvT9j"
+  },
+  {
+    id: 2,
     name: "OCR Automation Discord Bot",
     desc: "Text extraction and automated data entry software, saving 10 precious human hours per week. User base of 50+ people daily.",
     image: "eye.png",
@@ -14,7 +25,7 @@ const projects = [
     yt: "https://www.youtube.com/watch?v=8DBiJJX9OX0&ab_channel=JacobDementDemos"
   },
   {
-    id: 2,
+    id: 3,
     name: "3D Portfolio",
     desc: "My personal portfolio made with React Three Fiber.",
     image: "portfolio.png",
@@ -24,7 +35,7 @@ const projects = [
     liveDemoLink: "https://oia20.github.io/personalPortfolio/"
   },
   {
-    id: 3,
+    id: 4,
     name: "Browser RPG",
     desc: "A short engaging React RPG which takes about 10 minutes to beat.",
     image: "rpg.png",
@@ -34,7 +45,7 @@ const projects = [
     liveDemoLink: "https://oia20.github.io/browserRPG/"
   },
   {
-    id: 4,
+    id: 5,
     name: "Acre and Lot, Land Site",
     desc: "A website built for my partners family business to help with land acquisition.",
     image: "land.png",
@@ -44,7 +55,7 @@ const projects = [
     liveDemoLink: "https://acreandlot.com/"
   },
   {
-    id: 5,
+    id: 6,
     name: "What Should I Learn? Website",
     desc: "Learning focused website which gives you a random article in a selected category and three Youtube videos on the topic.",
     image: "learn.png",
@@ -53,7 +64,7 @@ const projects = [
     githubLink: "https://github.com/Oia20/What-to-learn-",
     liveDemoLink: "https://oia20.github.io/What-to-learn-/"
   }, {
-    id: 6,
+    id: 7,
     name: "Asynchronous Timer Discord Bot",
     desc: "Asynchronous timer which allows a gaming community to stay on the same page about NPC respawn times. Utilized by 25+ people daily.",
     image: "timer.png",

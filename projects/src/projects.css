@@ -232,6 +232,27 @@ html {
   color: rgb(0, 0, 0);
   border:#05030a solid 1px
 }
+
+#Node {
+  background-color: #44883e;
+}
+
+#Express {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border:#05030a solid 1px
+}
+#MySQL {
+  background-color: #16a2c2;
+}
+
+#Redux {
+  background-color: #752c97;
+}
+
+#TailwindCSS {
+  background-color: #3894d1;
+}
 @keyframes gradientAnimation {
   0% {
       background-position: 0% 50%;
