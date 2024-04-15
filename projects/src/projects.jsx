@@ -10,7 +10,7 @@ const projects = [
     technologies: ["JavaScript", "React", "Vite", "Node", "Express", "MySQL", "TailwindCSS", "Redux", "JSX", "CSS"],
     description: "I love the idea of shower thoughts and how they can be so silly, yet make you stop to think, so I made a website for people to share them! Unfortunately I can't keep the backend of the site live at the moment, so new posts and User Auth are currently unavailable. The Authentication encryption is done with the bcrpyt nodejs library to hash passwords. The database for this project uses MySQL, and the server is created using express/Node.js. The client side uses react, tailwindcss, redux for login state management, and vite for build tools.",
     githubLink: "https://github.com/Oia20/MuseDrops",
-    liveDemoLink: null, 
+    liveDemoLink: "https://oia20.github.io/MuseDropsStatic/", 
     yt: "https://youtu.be/T3d1-iLRyFY?si=agofhsfEN72DvT9j"
   },
   {
