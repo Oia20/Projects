@@ -6,7 +6,7 @@
 html {
   font-family: "barlow"'Times New Roman', Times, serif;
   height: 100vh;
-  background: linear-gradient(135deg, #3490dc, #6574cd);
+  background: linear-gradient(135deg, #63b1f0, #6574cd);
   background-size: 10000%;
   animation: gradientAnimation 10s ease infinite;
 }
@@ -34,28 +34,6 @@ html {
       font-family: Barlow, Arial, sans-serif; /* Choose your font */
       animation: shimmer 2s infinite alternate; /* Add shimmer animation */
     }
-    
-    @keyframes shimmer {
-      0% {
-        color: #05030a;
-        text-shadow: 0 0 10px #6574cd, 0 0 20px #6574cd, 0 0 30px #6574cd, 0 0 40px #6574cd, 0 0 50px #6574cd, 0 0 60px #6574cd, 0 0 70px #6574cd;
-      }
-      100% {
-        color: #172936; /* Adjust shimmer color */
-        text-shadow: 0 0 10px #3490dc, 0 0 20px #3490dc, 0 0 30px #3490dc 0 0 40px #3490dc, 0 0 50px #3490dc, 0 0 60px #3490dc, 0 0 70px #3490dc;
-      }
-    }
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%; /* Initial position */
-    }
-    50% {
-      background-position: 100% 50%; /* Midway position */
-    }
-    100% {
-      background-position: 0% 50%; /* Final position */
-    }
-  }
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -253,17 +231,7 @@ html {
 #TailwindCSS {
   background-color: #3894d1;
 }
-@keyframes gradientAnimation {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
-}
+
 
 
 .project-card h3 {
@@ -318,4 +286,28 @@ footer {
   padding: 5px;
   color: #3490dc;
 
+}
+
+
+.portfolio-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #0c1c63; /* Green border */
+  border-radius: 8px;
+  background-color: transparent;
+  color: #0c1c63; /* Green text */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.portfolio-button:hover {
+  background-color: #0c1c63; /* Green background on hover */
+  color: white; /* White text on hover */
+}
+
+.not {
+  text-align: center;
 }

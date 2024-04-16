@@ -115,6 +115,8 @@ const ProjectList = () => {
       <div className='headerbg'>
       <h1 className="header">Jacob Dement's projects</h1>
       </div>
+      <p className='not'>*Full 3D portfolio not recommended for low ram devices*</p>
+      <button className="portfolio-button">View Full 3D Portfolio</button>
       <div className="project-list">
         {projects.map((project) => (
           <ProjectCard
