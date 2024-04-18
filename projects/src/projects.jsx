@@ -109,8 +109,14 @@ const ProjectList = () => {
     setExpandedProjectId(projectId === expandedProjectId ? null : projectId);
   };
 
-  const handleClick = () => {
+  const handleClickedPort = () => {
     window.open("https://oia20.github.io/personalPortfolio/", "_blank")
+  }
+  const handleClickedGit = () => {
+    window.open("https://github.com/Oia20", "_blank")
+  }
+  const handleClickedLink = () => {
+    window.open("https://www.linkedin.com/in/jacob-dement-35658b275/", "_blank")
   }
 
   return (
@@ -119,8 +125,13 @@ const ProjectList = () => {
       <div className='headerbg'>
       <h1 className="header">Jacob Dement's projects</h1>
       </div>
+      <img className='profile' src='IMG_8257_Original.jpg'/>
+
       <p className='not'>*Full 3D portfolio not recommended for low ram devices*</p>
-      <button className="portfolio-button" onClick={handleClick}>View Full 3D Portfolio</button>
+      <button className="portfolio-button" onClick={handleClickedPort}>View Full 3D Portfolio</button>
+      <button className="portfolio-button" onClick={handleClickedLink}>LinkedIn</button>
+      <button className="portfolio-button" onClick={handleClickedGit}>Github</button>
+
       <div className="project-list">
         {projects.map((project) => (
           <ProjectCard

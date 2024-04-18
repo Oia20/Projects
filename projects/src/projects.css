@@ -301,13 +301,26 @@ footer {
   display: flex;
   justify-content: center;
   margin: auto;
+  margin-top: 5px;
+  width:max-content;
 }
 
 .portfolio-button:hover {
-  background-color: #0c1c63; /* Green background on hover */
+  background-color: #1c36a7; /* Green background on hover */
   color: white; /* White text on hover */
 }
 
 .not {
   text-align: center;
+}
+
+.profile {
+  height: 400px;
+  width: 300px;
+  border-radius: 400px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border: 3px #213bb1 solid;
+  box-shadow: 5px 5px 5px #0c1c63;
 }
