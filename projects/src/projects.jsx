@@ -4,6 +4,26 @@ import './projects.css'; // Import your CSS file for styling
 const projects = [
   {
     id: 1,
+    name: "Artist Portfolio Website",
+    desc: "An Artist portfolio website with a full Admin panel and CMS.",
+    image: "artport.png",
+    technologies: ["Angular", "TypeScript", "HTML", "CSS", "Docker", "PostgreSQL", "C#", ".NET", "Supabase", "S3", "Firebase", "Cloudflare"],
+    description: "I love art, and I wanted to create a website where users could log in and comment on a random famous painting. For the backend of this site I used .NET with C# to create an API which generates the random painting for the month. I used supabase for authentication and postgreSQL for the database. I containerized the API and hosed the docker image via railway. The frontend utilizes Reacts component based architecture and ReactThreeFiber to render the background floaties you see.",
+    githubLink: "https://github.com/Oia20/monthly-canvas",
+    liveDemoLink: "https://oia20.github.io/monthly-canvas/", 
+  },
+  {
+    id: 2,
+    name: "Monthly-Canvas",
+    desc: "A random famous painting is selected every month, and users can log in to comment on the painting.",
+    image: "canvas.png",
+    technologies: ["React", "JavaScript", "JSX","HTML", "CSS", "Vite", "Docker", "PostgreSQL", "C#", ".NET", "ReactThreeFiber"],
+    description: "I love art, and I wanted to create a website where users could log in and comment on a random famous painting. For the backend of this site I used .NET with C# to create an API which generates the random painting for the month. I used supabase for authentication and postgreSQL for the database. I containerized the API and hosed the docker image via railway. The frontend utilizes Reacts component based architecture and ReactThreeFiber to render the background floaties you see.",
+    githubLink: "https://github.com/Oia20/monthly-canvas",
+    liveDemoLink: "https://oia20.github.io/monthly-canvas/", 
+  },
+  {
+    id: 3,
     name: "CropSQL Educational Website",
     desc: "A site where users learn basic SQL commands and queries by managing a farms' database.",
     image: "cropSQL.png",
@@ -13,7 +33,7 @@ const projects = [
     liveDemoLink: "https://oia20.github.io/CropSQL/", 
   },
   {
-    id: 2,
+    id: 4,
     name: "MuseDrops, Fullstack Thought Sharing Platform",
     desc: "Website where you share your muses or 'Shower thoughts' with others.",
     image: "drops.png",
@@ -24,7 +44,7 @@ const projects = [
     yt: "https://youtu.be/T3d1-iLRyFY?si=agofhsfEN72DvT9j"
   },
   {
-    id: 3,
+    id: 5,
     name: "OCR Automation Discord Bot",
     desc: "Text extraction and automated data entry software, saving 10 precious human hours per week. User base of 50+ people daily.",
     image: "eye.png",
@@ -35,7 +55,7 @@ const projects = [
     yt: "https://www.youtube.com/watch?v=8DBiJJX9OX0&ab_channel=JacobDementDemos"
   },
   {
-    id: 4,
+    id: 6,
     name: "3D Portfolio",
     desc: "My personal portfolio made with React Three Fiber.",
     image: "portfolio.png",
@@ -45,7 +65,7 @@ const projects = [
     liveDemoLink: "https://oia20.github.io/personalPortfolio/"
   },
   {
-    id: 5,
+    id: 7,
     name: "Browser RPG",
     desc: "A short engaging React RPG which takes about 10 minutes to beat.",
     image: "rpg.png",
@@ -55,7 +75,7 @@ const projects = [
     liveDemoLink: "https://oia20.github.io/browserRPG/"
   },
   {
-    id: 6,
+    id: 8,
     name: "Acre and Lot, Land Site",
     desc: "A website built for my partners family business to help with land acquisition.",
     image: "land.png",
@@ -65,7 +85,7 @@ const projects = [
     liveDemoLink: "https://acreandlot.com/"
   },
   {
-    id: 7,
+    id: 9,
     name: "What Should I Learn? Website",
     desc: "Learning focused website which gives you a random article in a selected category and three Youtube videos on the topic.",
     image: "learn.png",
@@ -74,7 +94,7 @@ const projects = [
     githubLink: "https://github.com/Oia20/What-to-learn-",
     liveDemoLink: "https://oia20.github.io/What-to-learn-/"
   }, {
-    id: 8,
+    id: 10,
     name: "Asynchronous Timer Discord Bot",
     desc: "Asynchronous timer which allows a gaming community to stay on the same page about NPC respawn times. Utilized by 25+ people daily.",
     image: "timer.png",
