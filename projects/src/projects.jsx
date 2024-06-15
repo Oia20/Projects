@@ -9,8 +9,8 @@ const projects = [
     image: "artport.png",
     technologies: ["Angular", "TypeScript", "HTML", "CSS", "Docker", "PostgreSQL", "C#", ".NET", "Supabase", "S3", "Firebase", "Cloudflare"],
     description: "I love art, and I wanted to create a website where users could log in and comment on a random famous painting. For the backend of this site I used .NET with C# to create an API which generates the random painting for the month. I used supabase for authentication and postgreSQL for the database. I containerized the API and hosed the docker image via railway. The frontend utilizes Reacts component based architecture and ReactThreeFiber to render the background floaties you see.",
-    githubLink: "https://github.com/Oia20/monthly-canvas",
-    liveDemoLink: "https://oia20.github.io/monthly-canvas/", 
+    githubLink: "https://github.com/Oia20/artPortfolio",
+    liveDemoLink: "https://rosaliasart.com/home", 
   },
   {
     id: 2,
