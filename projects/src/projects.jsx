@@ -8,7 +8,7 @@ const projects = [
     desc: "An Artist portfolio website with a full Admin panel and CMS.",
     image: "artport.png",
     technologies: ["Angular", "TypeScript", "HTML", "CSS", "Docker", "PostgreSQL", "C#", ".NET", "Supabase", "S3", "Firebase", "Cloudflare"],
-    description: "I love art, and I wanted to create a website where users could log in and comment on a random famous painting. For the backend of this site I used .NET with C# to create an API which generates the random painting for the month. I used supabase for authentication and postgreSQL for the database. I containerized the API and hosed the docker image via railway. The frontend utilizes Reacts component based architecture and ReactThreeFiber to render the background floaties you see.",
+    description: "I created this website for my partner as for our 3 year anniversary, so as you can imagine this was a very passionate project. The admin side of this website allows her to have full CRUD operations over her paintings being displayed on the site. I'm very happy with how the project turned out, hidden within the URL's are also a few easter eggs for her to find. For storing the images I used supabases AWS S3 API. This project also made me love the oppinionated nature of angular development.",
     githubLink: "https://github.com/Oia20/artPortfolio",
     liveDemoLink: "https://rosaliasart.com/home", 
   },
