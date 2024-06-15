@@ -245,6 +245,42 @@ html {
   background-color: #9b4993;
 }
 
+#Angular {
+  background-color: #DD0031;
+  color: white;
+}
+
+#TypeScript {
+  background-color: #2b7489;
+}
+
+#Docker {
+  background-color: #0db7ed;
+}
+
+#Supabase {
+  background-color: #00cc6d;
+}
+
+#PostgreSQL {
+  background-color: #316192;
+}
+
+#S3 {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border:#05030a solid 1px
+}
+
+#Firebase {
+  background-color: #F6820D;
+  color: #FFCB2B;
+}
+
+#Cloudflare {
+  background-color: #f38020;
+}
+
 .project-card h3 {
   padding-left: 21px;
 }
